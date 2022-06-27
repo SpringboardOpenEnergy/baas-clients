@@ -15,7 +15,7 @@ def retrieve_historical_data(server_url, token,  battery_id):
         "battery_id": battery_id,
         "from_datetime": "2021-05-07 00:00:00",
         "to_datetime": "2022-06-23 00:00:00",
-        "resolution": "Week"
+        "resolution": "Day"
     }
     result = requests.post(url, json=qry_payload, headers=headers)
     print(result)
@@ -27,4 +27,4 @@ if __name__ == '__main__':
     load_env()
     token = os.environ.get("basic_auth_token")
     server_url = os.environ.get("server_url")
-    retrieve_historical_data(server_url, token, "f8fb7967-f8c6-4b18-befd-ee6bb0e5a71c")
+    retrieve_historical_data(server_url, token, "47a3d71e-7165-4604-a6d2-c210af8a33dd")
