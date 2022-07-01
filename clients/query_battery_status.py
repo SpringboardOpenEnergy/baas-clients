@@ -22,4 +22,4 @@ if __name__ == '__main__':
     load_env()
     token = os.environ.get("basic_auth_token")
     server_url = os.environ.get("server_url")
-    retrieve_battery_status(server_url, token, "f8fb7967-f8c6-4b18-befd-ee6bb0e5a71c")
+    retrieve_battery_status(server_url, token, "47a3d71e-7165-4604-a6d2-c210af8a33dd")
